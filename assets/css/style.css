@@ -43,7 +43,7 @@ ul > li {
   flex-direction: column;
 }
 
-.oscuro {
+.deepdark {
   background-color: #1E2326;
 }
 
@@ -51,6 +51,32 @@ ul > li {
   --animate-duration: 2s;
 }
 
+.nav-link,
+h2,
+h3,
+.social a {
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, #1CB698, #1CB698 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: 1s ease;
+}
+
+
+
+.nav-link:hover,
+h2:hover,
+h3:hover,
+.social a:hover {
+  background-position: 0 100%;
+}
 
 /* /utility */
 
@@ -73,26 +99,6 @@ header {
   text-transform: capitalize;
 }
 
-.nav-link,h4,h2 {
-  vertical-align: middle;
-  position: relative;
-  display: inline-block;
-  color: white;
-  overflow: hidden;
-  background: linear-gradient(to right, #1CB698, #1CB698 50%, white 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: 1s ease;
-}
-
-
-
-.nav-link:hover, h4:hover,h2:hover {
- background-position: 0 100%;
-}
 
 .navbar-toggler {
 background-color: #1CB698;
@@ -189,10 +195,18 @@ img {
   justify-content: space-around;
 }
 
-
 .social i {
   font-size: 26px;
   padding: 0px 10px;
+}
+
+.social a{
+  text-decoration: none;
+  color: white;
+}
+
+.details {
+  padding: 0px;
 }
 
 
@@ -283,7 +297,7 @@ align-items: center;
 }
 
 .resume {
-   width: 50%;
+   width: 80%;
    margin: 40px 0px;
    line-height: 2;
 }
