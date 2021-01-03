@@ -1,0 +1,27 @@
+@media all and (max-width:420px) {
+
+}
+
+
+@media all and (max-width:768px) {
+  .experience > div {
+        width: 90%;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 991px) {
+
+    .experience > div {
+        width: 90%;
+    }
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+@media all and (min-width: 1201px) {
+
+}

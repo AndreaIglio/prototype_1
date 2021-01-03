@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Righteous';
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li {
+  display: block;
+}
+
+
+/* utility */
+
+.wrapper {
+ width: 100vw;
+ align-items: center;
+}
+
+.green {
+  color: #1CB698;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.oscuro {
+  background-color: #1E2326;
+}
+
+.animate__animated,.animate__fadeIn {
+  --animate-duration: 2s;
+}
+
+
+/* /utility */
+
+
+/* header */
+
+header {
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar{
+  background-color:#1E2326;
+  padding: 10px 0;
+  
+  
+}
+
+.navbar-item{
+  text-transform: capitalize;
+}
+
+.nav-link:hover {
+  color: #1CB698;
+  transition: 1s;
+}
+
+.navbar-toggler {
+background-color: #1CB698;
+}
+
+.navbar i {
+  padding: 5px;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+}
+
+
+.navbar .navbar-brand {
+  color: #1CB698;
+  font-size: 28px;
+}
+
+header h5{
+  margin: 0;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+/* /header */
+
+
+
+/* main */
+.profile {
+  height: 600px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/cover1.png');
+  position: relative;
+  z-index: 2;
+  
+}
+
+img {
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid #1CB698;
+  box-shadow: 0 0 0 16px rgba(102, 204, 102, 0.2);
+  z-index: 2;
+  margin-bottom: 250px;
+}
+
+.profile_details {
+  align-items: center;
+  background-color: #252A2E;
+  border-radius: 10px;
+  padding: 120px 40px 20px 40px;
+  position: absolute;
+  bottom: 12%;
+  z-index: -1;
+}
+
+.profile_details h3{
+  font-size: 36px;
+}
+
+.profile_details h6 {
+  padding: 10px;
+}
+
+.profile_details ul {
+  list-style-type: none;
+}
+
+
+
+.profile_details li {
+ display: block;
+ padding: 10px;
+}
+
+
+.social {
+  justify-content: space-around;
+}
+
+
+.social i {
+  font-size: 26px;
+  padding: 0px 10px;
+}
+
+
+
+/* About */
+
+.about {
+  width: 80%;
+  margin: 40px 0px;
+  line-height: 2;
+}
+
+section h1, section i{
+ text-align: center;
+}
+
+section .fa-info-circle {
+  color: rgb(0, 225, 255);
+  
+}
+
+section i {
+  font-size: 35px;
+}
+
+.line_border {
+  width: 100px;
+  border: 1px solid #1CB698;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.line_border_second {
+
+  width: 50px;
+  border: 1px solid #1CB698;
+  text-align: center;
+  align-self: center;
+}
+
+.about h4 {
+  margin-bottom: 10px;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+}
+
+.about p {
+  margin: 40px 0;
+}
+
+
+.info_details {
+  color: #1CB698;
+  font-family: 'Righteous';
+}
+
+.my_interests {
+  justify-content: center;
+}
+
+.card_interests {
+  height: 90px;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 15px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #252A2E;
+}
+
+.card_interests:hover {
+  background-color: #1CB698;
+  transition: 1s;
+}
+
+/* /About */
+
+
+/* resume */
+
+#my_resume {
+background-color: #252A2E;
+width: 100%;
+align-items: center;
+}
+
+.resume {
+   width: 80%;
+   margin: 40px 0px;
+   line-height: 2;
+}
+
+.experience {
+  width: 100%;
+  justify-content: space-between;
+  margin: 40px 0;
+   flex-wrap: wrap;
+}
+
+.experience > div {
+  width: 48%;
+}
+
+.education {
+  border-right: 1px solid #333;
+}
+
+.education >.resume_card:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #1CB698;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    right: -51px;
+    border: 2px solid #1CB698;
+    z-index: 2;
+    transform: translateY(-45%);
+}
+
+.education > h4, .work_exp > h4 {
+  align-self: center;
+}
+
+.work_exp {
+  border-left: 1px solid #333;
+}
+
+.resume_card {
+  background-color: #1E2326;
+  border-radius: 10px;
+  padding: 25px;
+  border-right: 4px solid #1CB698;
+  margin: 20px 40px;
+  position: relative;
+}
+
+.resume_card span {
+  color: #1CB698;
+}
+
+.resume_card_border {
+  position: absolute;
+  right: -40px;
+  width: 39px;
+  border-bottom: 2px solid #1CB698;
+  top: 50%;
+}
+
+
+.work_exp > .resume_card {
+  border-left: 4px solid #1CB698;
+  border-right: none;
+}
+
+.work_exp .resume_card_border {
+   position: absolute;
+   left: -40px;
+   width: 39px;
+   border-bottom: 2px solid #1CB698;
+   top: 50%;
+}
+
+.work_exp >.resume_card:after{
+     content: '';
+     display: inline-block;
+     position: absolute;
+     background-color: #1CB698;
+     border-radius: 10px;
+     width: 12px;
+     height: 12px;
+     top: 50%;
+     left: -51px;
+     border: 2px solid #1CB698;
+     z-index: 2;
+     transform: translateY(-45%);
+}
+
+/* /resume */
+
+
+/* /main */
+
+
+
+/* footer */
+
+/* /footer */
