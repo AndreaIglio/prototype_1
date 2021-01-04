@@ -217,6 +217,22 @@
          <h1 class="animate__animated animate__fadeInUp section_title">Recent Portfolio</h1>
          <div class="line_border"></div>
          <div class="line_border_second "></div>
+
+      <div class="flex portfolio_categories">
+        <h5 v-for="(item, index) in portfolio_categories" :key="index" @click=''>
+          {{portfolio_categories[index].name}}
+        </h5>
+        
+      </div>
+      <div class="flex portfolio_project">
+
+     
+      <div v-for="(item, index) in portfolio" :key="index" class="flex">
+        {{item.categories}}
+      </div>
+       </div>
+      
+
     </div>
   </section>
 

@@ -73,7 +73,19 @@ h3,
   transition: 1s ease;
 }
 
+h5 {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  -webkit-transition: background 1s;
+  transition: background 0.7s;
 
+}
+
+h5:hover {
+background-color: #1CB698;
+
+}
 
 .nav-link:hover,
 h2:hover,
@@ -421,6 +433,26 @@ align-items: center;
   width: 80%;
   margin: 40px 0px;
   line-height: 2;
+  align-items: center;
+}
+
+.portfolio_categories {
+
+  justify-content: space-evenly;
+  margin: 40px 0px;
+  width: 60%;
+  
+}
+
+.portfolio_categories > h5 {
+  cursor: pointer; 
+  margin: 0;
+}
+
+.portfolio_project {
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* /portfolio */

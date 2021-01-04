@@ -32,5 +32,42 @@ var app = new Vue({
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, amet!",
       },
     ],
+    portfolio_categories: [
+      { name: "All categories", visible: true},
+      { name: "HTML + CSS", visible: false },
+      { name: "JQuery", visible: false },
+      { name: "VueJs", visible: false },
+    ],
+    portfolio: [
+      {
+        src: "",
+        categories: "html_css",
+      },
+      {
+        src: "",
+        categories: "html_css",
+      },
+      {
+        src: "",
+        categories: "JQuery",
+      },
+      {
+        src: "",
+        categories: "VueJs",
+      },
+      {
+        src: "",
+        categories: "VueJs",
+      },
+      {
+        src: "",
+        categories: "VueJs",
+        
+      },
+    ],
+  },
+
+  methods: {
+    selectPortfolio: function () {},
   },
 });
