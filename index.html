@@ -54,9 +54,9 @@
   <title>Document</title>
 </head>
 
-<body class="">
+<body>
 
-  <div class="wrapper flex deepdark column">
+  <div class="wrapper flex deepdark column" id="root">
 
     <!-- header -->
     <header id="header">
@@ -92,7 +92,7 @@
 
     <!-- main -->
     <section class="flex column profile">
-      <img src="assets/img/circle-cropped.png" class="animate__animated animate__zoomIn" alt="">
+      <img src="assets/img/header/circle-cropped.png" class="animate__animated animate__zoomIn" alt="">
       <div class="flex column profile_details">
         <h3 ><strong>
             ANDREA IGLIO
@@ -132,7 +132,7 @@
         esse repellat fugiat fuga!</p>
 
       <div class="row flex">
-        <div class="col-lg-6 col-sm-12 animate__animated animate__rotateInDownLeft">
+        <div class="col-lg-6 col-sm-12 animate__animated animate__rotateInDownLeft ">
           <h2>Personal Details</h2>
           <div class="row">
             <div class="col-lg-6 col-6 info_details">
@@ -150,40 +150,19 @@
                 <li>28-01-1994</li>
                 <li>+39 3406793418</li>
                 <li>andrea.iglio@gmail.com</li>
-               
                 <li>Italy, Turin, 10141</li>
 
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-12 animate__animated animate__rotateInDownRight">
-          <h2>My Interests</h2>
+        <div class="col-lg-6 col-sm-12 animate__animated animate__rotateInDownRight skills">
+          <h2>Skills</h2>
           <div class="row flex my_interests">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-3 card_interests flex column">
-              <i class="fas fa-gamepad"></i>
-              <span>GAMES</span>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-3 card_interests flex column">
-              <i class="fas fa-gamepad"></i>
-              <span>GAMES</span>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-3 card_interests flex column">
-              <i class="fas fa-gamepad"></i>
-              <span>GAMES</span>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-3 card_interests flex column">
-              <i class="fas fa-gamepad"></i>
-              <span>GAMES</span>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-3 card_interests flex column">
-              <i class="fas fa-gamepad"></i>
-              <span>GAMES</span>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-3 card_interests flex column">
-              <i class="fas fa-gamepad"></i>
-              <span>GAMES</span>
-            </div>
+             <div class="col-lg-3 col-md-3 col-sm-3 col-3 flex" v-bind:class="card_interests"
+               v-for="(image, index) in skills" :key="index">
+               <img :src="skills[index]" alt="">
+             </div>
             
 
           </div>
@@ -266,17 +245,11 @@
     </footer>
     <!-- /footer -->
 
-    <!--  Vue Js  -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <!-- /Vue Js -->
 
-    <!-- JS script -->
-    <script type="text/javascript" src="assets/js/script.js">
-    </script>
-    <!-- /JS script -->
-
-
+  
   </div>
 </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
 
 </html>

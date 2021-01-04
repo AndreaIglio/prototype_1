@@ -146,13 +146,13 @@ header li a {
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/cover1.png');
+  background-image: url('../img/header/cover1.png');
   position: relative;
   z-index: 2;
   
 }
 
-img {
+.profile img {
   width: 300px;
   border-radius: 50%;
   border: 10px solid #1CB698;
@@ -219,6 +219,7 @@ img {
   line-height: 2;
 }
 
+
 section h1, section i{
  text-align: center;
 }
@@ -272,18 +273,28 @@ section i {
 
 .card_interests {
   height: 90px;
-  vertical-align: middle;
   text-align: center;
-  padding-top: 15px;
+  justify-content: center;
+  align-items: center;
   margin: 5px;
   border-radius: 10px;
   background-color: #252A2E;
+  
 }
 
 .card_interests:hover {
   background-color: #1CB698;
   transition: 1s;
 }
+
+
+/* skills */
+
+.skills img {
+  width: 50px;
+}
+
+/* /skills */
 
 /* /About */
 
