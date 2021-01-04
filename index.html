@@ -119,7 +119,7 @@
     <section class="flex column about" id="about_me">
       <div class="container flex column">
       <i class="fas fa-info-circle animate__animated animate__fadeInUp"></i>
-      <h1 class="animate__animated animate__fadeInUp">About me</h1>
+      <h1 class="animate__animated animate__fadeInUp section_title">About me</h1>
       <div class="line_border"></div>
       <div class="line_border_second "></div>
       <p class=""><span class="green animate__animated animate__fadeIn animate__delay-1s">Hello! I'm
@@ -140,7 +140,6 @@
                 <li>Birthdate</li>
                 <li>Phone</li>
                 <li>Email</li>
-               
                 <li>Address</li>
 
               </ul>
@@ -176,56 +175,33 @@
     <section class="flex column " id="my_resume">
       <div class="resume flex column">
      <i class="fas fa-info-circle animate__animated animate__fadeInUp"></i>
-     <h1 class="animate__animated animate__fadeInUp">My Resume</h1>
+     <h1 class="animate__animated animate__fadeInUp section_title">My Resume</h1>
      <div class="line_border"></div>
      <div class="line_border_second "></div>
         
-        <div class="flex experience ">
+        <div class="flex experience">
          
           <div class="flex education column animate__animated animate__fadeIn">
-             <h4>Education</h4>
-              <div class="resume_card flex column">
-                <h4>Diploma</h4>
-                <span>2013/2015</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, amet!</p>
-                
-              <div class="resume_card_border">
-
-              </div>
+             <h2>Formation</h2>
+              
+            <div class="flex column" v-bind:class="resume_card" v-for="(item, index) in formation" :key="index">
+              <h4>{{formation[index].subject}}</h4>
+              <span>{{formation[index].year}}</span>
+              <p>{{formation[index].description}}</p>
+              <div class="resume_card_border"></div>
             </div>
-             <div class="resume_card flex column">
-                <h4>Diploma</h4>
-                <span>2013/2015</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, amet!</p>
-                
-                <div class="resume_card_border">
-                 
-                </div>
-            </div> 
           </div>
          <span class="divider"> 
          </span>
           <div class="flex column work_exp animate__animated animate__fadeIn">
-            <h4>Work Experience</h4>
-            <div class="resume_card flex column">
-              <h4>Diploma</h4>
-              <span>2013/2015</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, amet!</p>
-
-               <div class="resume_card_border">
-
-               </div>
+            <h2>Work Experience</h2>
+           
+            <div class="flex column" v-bind:class="resume_card" v-for="(item, index) in workexperience" :key="index">
+              <h4>{{workexperience[index].position}}</h4>
+              <span>{{workexperience[index].year}}</span>
+              <p>{{workexperience[index].description}}</p>
+              <div class="resume_card_border"></div>
             </div>
-            <div class="resume_card flex column">
-              <h4>Diploma</h4>
-              <span>2013/2015</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, amet!</p>
-              <div class="resume_card_border">
-
-              </div>
-            </div>
-     
-         
           </div>
 
         </div>
@@ -234,6 +210,15 @@
      </div>
   </section>
 
+
+  <section class="flex column" id="recent_portfolio">
+    <div class="portfolio flex column">
+         <i class="fas fa-info-circle animate__animated animate__fadeInUp"></i>
+         <h1 class="animate__animated animate__fadeInUp section_title">Recent Portfolio</h1>
+         <div class="line_border"></div>
+         <div class="line_border_second "></div>
+    </div>
+  </section>
 
     
     <!-- /main -->

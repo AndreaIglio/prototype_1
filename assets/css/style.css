@@ -47,6 +47,10 @@ ul > li {
   background-color: #1E2326;
 }
 
+.section_title {
+  margin: 15px 0;
+}
+
 .animate__animated,.animate__fadeIn {
   --animate-duration: 2s;
 }
@@ -343,7 +347,7 @@ align-items: center;
     transform: translateY(-45%);
 }
 
-.education > h4, .work_exp > h4 {
+.education > h2, .work_exp > h2 {
   align-self: center;
 }
 
@@ -402,6 +406,26 @@ align-items: center;
 }
 
 /* /resume */
+
+
+/* portfolio */
+
+#recent_portfolio {
+  background-color: #1E2326;
+  width: 100%;
+  align-items: center;
+}
+
+
+.portfolio {
+  width: 80%;
+  margin: 40px 0px;
+  line-height: 2;
+}
+
+/* /portfolio */
+
+
 
 
 /* /main */
