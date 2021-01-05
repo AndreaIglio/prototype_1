@@ -79,10 +79,10 @@
               <a class="nav-link" href="#my_resume">Resume</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#recent_portfolio">Portfolio</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact_me">Contact</a>
             </li>
           </ul>
         </div>
@@ -219,18 +219,20 @@
          <div class="line_border_second "></div>
 
       <div class="flex portfolio_categories">
-        <h5 v-for="(item, index) in portfolio_categories" :key="index" @click=''>
+        <h5 v-for="(item, index) in portfolio_categories" :key="index" @click='selectPortfolio(index)'>
           {{portfolio_categories[index].name}}
         </h5>
         
       </div>
+      
       <div class="flex portfolio_project">
+      <div v-for="(item, index) in portfolio" :key="index" class="flex projects animate__animated animate__zoomIn" v-if="item.visible == true">
+        
+        <img :src="item.src" alt="" @mouseover="" @mouseleave= "">
 
-     
-      <div v-for="(item, index) in portfolio" :key="index" class="flex">
-        {{item.categories}}
+        
       </div>
-       </div>
+      </div>
       
 
     </div>

@@ -1,6 +1,8 @@
 var app = new Vue({
   el: "#root",
   data: {
+    active: "active",
+    hover: false,
     card_interests: "card_interests",
     skills: [
       "assets/img/skills/html5.svg",
@@ -33,41 +35,126 @@ var app = new Vue({
       },
     ],
     portfolio_categories: [
-      { name: "All categories", visible: true},
-      { name: "HTML + CSS", visible: false },
-      { name: "JQuery", visible: false },
-      { name: "VueJs", visible: false },
+      { name: "All categories" },
+      { name: "HTML + CSS" },
+      // { name: "JQuery" },
+      { name: "VueJs" },
+      { name: "Javascript" },
     ],
     portfolio: [
+      // {
+      //   src: "assets/img/portfolio_project/Html+Css_DigitalOcean.PNG",
+      //   categories: "html_css",
+      //   visible: true,
+      // },
       {
-        src: "",
+        src: "assets/img/portfolio_project/Html+Css_Helbiz.PNG",
         categories: "html_css",
+        visible: true,
+        description: "Helbiz",
       },
       {
-        src: "",
+        src: "assets/img/portfolio_project/Html+Css_Spotify.PNG",
         categories: "html_css",
+        visible: true,
+        description: "Spotify",
       },
+      // {
+      //   src: "assets/img/portfolio_project/JQuery_Carousel.PNG",
+      //   categories: "JQuery",
+      //   visible: true,
+      // },
       {
-        src: "",
-        categories: "JQuery",
-      },
-      {
-        src: "",
+        src: "assets/img/portfolio_project/VueJs_Boolzapp.PNG",
         categories: "VueJs",
+        visible: true,
+        description: "Whatsapp Web",
       },
       {
-        src: "",
+        src: "assets/img/portfolio_project/VueJs_ToDoList.PNG",
         categories: "VueJs",
+        visible: true,
+        description: "To do List",
       },
       {
-        src: "",
-        categories: "VueJs",
-        
+        src: "assets/img/portfolio_project/Js_BigliettoTreno.PNG",
+        categories: "Javascript",
+        visible: true,
+        description: "Train Ticket",
+      },
+      {
+        src: "assets/img/portfolio_project/Js_EmailDadi.PNG",
+        categories: "Javascript",
+        visible: true,
+        description: "Email & Dice game",
       },
     ],
   },
 
   methods: {
-    selectPortfolio: function () {},
+    selectPortfolio: function (index) {
+      console.log(this.portfolio_categories[index].name);
+
+      if (this.portfolio_categories[index].name == "All categories") {
+        this.portfolio.forEach((element) => {
+          element.visible = false;
+          console.log(element.visible);
+          element.visible = true;
+        });
+      } else if (this.portfolio_categories[index].name == "HTML + CSS") {
+        this.portfolio.forEach((element) => {
+          console.log(element.categories);
+          if (element.categories != "html_css") {
+            element.visible = false;
+          } else {
+            element.visible = true;
+          }
+        });
+      } else if (this.portfolio_categories[index].name == "JQuery") {
+        this.portfolio.forEach((element) => {
+          console.log(element.categories);
+          if (element.categories != "JQuery") {
+            element.visible = false;
+          } else {
+            element.visible = true;
+          }
+        });
+      } else if (this.portfolio_categories[index].name == "VueJs") {
+        this.portfolio.forEach((element) => {
+          console.log(element.categories);
+          if (element.categories != "VueJs") {
+            element.visible = false;
+          } else {
+            element.visible = true;
+          }
+        });
+      } else if (this.portfolio_categories[index].name == "Javascript") {
+        this.portfolio.forEach((element) => {
+          console.log(element.categories);
+          if (element.categories != "Javascript") {
+            element.visible = false;
+          } else {
+            element.visible = true;
+          }
+        });
+      }
+
+      // console.log(index);
+
+      // this.portfolio.forEach(element => {
+      //   console.log(element.visible);
+      //   if (element.visible == true){
+      //     element.visible = false;
+      //     console.log(element.visible);
+      //   }
+      //   else {
+      //     element.visible = true;
+      //     console.log(element.visible);
+      //   }
+      //   console.log(index);
+
+      // });
+    },
+
   },
 });
