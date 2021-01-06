@@ -156,5 +156,8 @@ var app = new Vue({
       // });
     },
 
+    onHover: function (index){
+      
+    }
   },
 });
