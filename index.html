@@ -233,8 +233,12 @@
       <div v-for="(item, index) in portfolio" :key="index"
         class="flex projects animate__animated animate__zoomIn col-lg-4 col-md-6 col-sm-6 col-12 "
         v-if="item.visible == true">
-        
-        <img :src="item.src" alt="" @mouseover="" @mouseleave= "">
+        <div class="overlay flex column" @click='popUpImg'>
+          <!-- <i class="fas fa-search"></i> -->
+          <span class="animate__animated animate__backInUp">{{item.description}}</span>
+        </div>
+        <img class="popUp" :src="item.src" alt="" @mouseover="" @mouseleave= "">
+      
 
         
       </div>
@@ -244,6 +248,38 @@
     </div>
   </section>
 
+
+  <section class="flex column" id="contact_me">
+    <div class="contact_structure flex column">
+      <i class="fas fa-info-circle animate__animated animate__fadeInUp"></i>
+      <h1 class="animate__animated animate__fadeInUp section_title">Contact Me</h1>
+      <div class="line_border"></div>
+      <div class="line_border_second "></div>
+
+      <div class="flex contact">
+        <div class="flex contact_form">
+          <form class="flex column" action="contact-form.php" id="contact_form" method="post">
+            
+            <input type="text" id="fname" name="firstname" placeholder="Your name" required>
+            <input type="text" id="lname" name="lastname" placeholder="Your lastname" required>
+            <input type="email" name="message" placeholder="Your email" required>
+            <textarea id="subject" name="subject" placeholder="Message" style="height:200px" required>
+            </textarea>
+
+            <input type="submit" value="Send Message">
+          </form>
+         
+        </div>
+        <div class="location flex">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873596.5830513006!2d6.527976449587075!3d45.303442713910975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886cec9065f3b7%3A0xd57543115446395a!2sCorso%20Monte%20Cucco%2C%2073%2C%2010141%20Torino%20TO!5e0!3m2!1sen!2sit!4v1609944472206!5m2!1sen!2sit"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
     
     <!-- /main -->
 
