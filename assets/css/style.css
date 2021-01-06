@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -163,6 +167,9 @@ header li a {
 
 
 /* main */
+
+/* profile */
+
 .profile {
   height: 600px;
   width: 100vw;
@@ -174,22 +181,28 @@ header li a {
   
 }
 
+.image3d{
+  align-items: center;
+  position: relative;
+  width: 80%;
+}
+
 .profile img {
   width: 300px;
   border-radius: 50%;
   border: 10px solid #1CB698;
   box-shadow: 0 0 0 16px rgba(102, 204, 102, 0.2);
   z-index: 2;
-  margin-bottom: 250px;
+  margin-bottom: 180px;
 }
 
 .profile_details {
   align-items: center;
   background-color: #252A2E;
   border-radius: 10px;
-  padding: 120px 40px 20px 40px;
+  padding: 140px 20px 10px 40px;
   position: absolute;
-  bottom: 12%;
+  top: 42%;
   z-index: -1;
 }
 
@@ -231,6 +244,7 @@ header li a {
   padding: 0px;
 }
 
+/* /profile */
 
 
 /* About */
@@ -437,7 +451,7 @@ align-items: center;
 
 .portfolio {
   width: 80%;
-  margin: 40px 0px;
+  margin-top: 40px;
   line-height: 2;
   align-items: center;
 }
@@ -460,6 +474,7 @@ align-items: center;
   width: 70%;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 40px 0px;
  
 }
 

@@ -92,7 +92,7 @@
 
     <!-- main -->
     <section class="flex column profile">
-      <img src="assets/img/header/circle-cropped.png" class="animate__animated animate__zoomIn" alt="">
+      <img id="image3d" src="assets/img/header/circle-cropped.png" class="animate__animated animate__zoomIn" alt="">
       <div class="flex column profile_details">
         <h3 ><strong>
             ANDREA IGLIO
@@ -222,29 +222,23 @@
         <h5 v-for="(item, index) in portfolio_categories" :key="index" @click='selectPortfolio(index)'>
           {{portfolio_categories[index].name}}
         </h5>
-        
-      </div>
       
-
-      
-      
-
       <div class="flex portfolio_project">
       <div v-for="(item, index) in portfolio" :key="index"
         class="flex projects animate__animated animate__zoomIn col-lg-4 col-md-6 col-sm-6 col-12 "
         v-if="item.visible == true">
-        <div class="overlay flex column" @click='popUpImg'>
+        <div class="overlay flex column" @click=''>
           <!-- <i class="fas fa-search"></i> -->
           <span class="animate__animated animate__backInUp">{{item.description}}</span>
         </div>
-        <img class="popUp" :src="item.src" alt="" @mouseover="" @mouseleave= "">
+        <img class="" :src= "item.src" alt="" @mouseover="" @mouseleave= "">
       
 
         
       </div>
       </div>
       
-
+</div>
     </div>
   </section>
 
@@ -272,7 +266,7 @@
         </div>
         <div class="location flex">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873596.5830513006!2d6.527976449587075!3d45.303442713910975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886cec9065f3b7%3A0xd57543115446395a!2sCorso%20Monte%20Cucco%2C%2073%2C%2010141%20Torino%20TO!5e0!3m2!1sen!2sit!4v1609944472206!5m2!1sen!2sit"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d720244.6705049617!2d6.828836613519187!3d45.15762034567113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47884595931bc5ff%3A0x305e67d473c7d70!2sMetropolitan%20City%20of%20Turin!5e0!3m2!1sen!2sit!4v1609957155999!5m2!1sen!2sit"
             width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe>
         </div>
@@ -296,5 +290,7 @@
 </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
+  <script type="text/javascript" src="assets/js/image3d.js"></script>
+
 
 </html>

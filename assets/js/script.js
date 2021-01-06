@@ -169,3 +169,4 @@ var app = new Vue({
 // 4- Implement footer with an UP bottom to go automatically on top of the page
 // 5- Insert the right informations
 // 6- Change the icons for the different sections
+// 7- Navbar mobile to work
