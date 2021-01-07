@@ -1,5 +1,7 @@
 @media all and (max-width:420px) {
 
+   
+
 }
 
 
@@ -7,6 +9,11 @@
   .experience > div {
         width: 90%;
     }
+ .location {
+     padding-left: 50%;
+   
+ }
+
 }
 
 @media all and (min-width: 769px) and (max-width: 991px) {

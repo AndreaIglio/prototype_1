@@ -219,9 +219,13 @@
          <div class="line_border_second "></div>
 
       <div class="flex portfolio_categories">
-        <h5 v-for="(item, index) in portfolio_categories" :key="index" @click='selectPortfolio(index)'>
-          {{portfolio_categories[index].name}}
-        </h5>
+        <div class="flex categories">
+           <h5 v-for="(item, index) in portfolio_categories" :key="index" @click='selectPortfolio(index)'
+             >
+             {{portfolio_categories[index].name}}
+           </h5>
+        </div>
+       
       
       <div class="flex portfolio_project">
       <div v-for="(item, index) in portfolio" :key="index"
@@ -251,7 +255,7 @@
       <div class="line_border_second "></div>
 
       <div class="flex contact">
-        <div class="flex contact_form">
+        <div class="flex contact_form col-lg-6 col-md-6 col-sm-12 col-12">
           <form class="flex column" action="contact-form.php" id="contact_form" method="post">
             
             <input type="text" id="fname" name="firstname" placeholder="Your name" required>
