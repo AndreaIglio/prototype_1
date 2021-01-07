@@ -138,22 +138,6 @@ var app = new Vue({
           }
         });
       }
-
-      // console.log(index);
-
-      // this.portfolio.forEach(element => {
-      //   console.log(element.visible);
-      //   if (element.visible == true){
-      //     element.visible = false;
-      //     console.log(element.visible);
-      //   }
-      //   else {
-      //     element.visible = true;
-      //     console.log(element.visible);
-      //   }
-      //   console.log(index);
-
-      // });
     },
 
   },

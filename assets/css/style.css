@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,a {
   font-family: 'Righteous';
 }
 
@@ -68,6 +68,7 @@ ul > li {
 .nav-link,
 h2,
 h3,
+h6,
 .social a {
   vertical-align: middle;
   position: relative;
@@ -100,6 +101,7 @@ background-color: #1CB698;
 .nav-link:hover,
 h2:hover,
 h3:hover,
+h6:hover,
 .social a:hover {
   background-position: 0 100%;
 }
@@ -233,6 +235,9 @@ header li a {
 .social i {
   font-size: 26px;
   padding: 0px 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px 10px;
 }
 
 .social a{
@@ -589,5 +594,45 @@ input,textarea {
 
 
 /* footer */
+
+footer {
+  width: 100%;
+  background-color: #1E2326;
+  align-items: center;
+  position: relative;
+  
+}
+
+.nav-footer {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 20px 0px;
+}
+
+.up {
+  width: 50px;
+  height: 50px;
+  background-color:#1CB698;
+  position: absolute;
+  bottom: 150px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.up a{
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.nav-footer ul{
+  margin: 0;
+}
+
+.copyright {
+ padding: 10px 0px;
+ margin: 10px 0px;
+}
 
 /* /footer */
