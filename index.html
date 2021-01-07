@@ -63,7 +63,7 @@
       
       <nav class="navbar navbar-expand-lg animate__animated animate__fadeInUp">
         <h5 class="navbar-brand animate__animated animate__bounce"><strong>Andrea</strong> </h5>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
@@ -89,9 +89,27 @@
       </nav>
     </header>
     <!-- /header -->
-
     <!-- main -->
     <section class="flex column profile">
+      <div class="hamburger_menu" id="hamburger_div">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#header">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#about_me">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#my_resume">Resume</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#recent_portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contact_me">Contact</a>
+          </li>
+        </ul>
+      </div>
       <img id="image3d" src="assets/img/header/circle-cropped.png" class="animate__animated animate__zoomIn" alt="">
       <div class="flex column profile_details">
         <h3 ><strong>
@@ -174,7 +192,7 @@
 
     <section class="flex column " id="my_resume">
       <div class="resume flex column">
-     <i class="fas fa-info-circle animate__animated animate__fadeInUp"></i>
+     <i class="fas fa-book-open animate__animated animate__fadeInUp"></i>
      <h1 class="animate__animated animate__fadeInUp section_title">My Resume</h1>
      <div class="line_border"></div>
      <div class="line_border_second "></div>
@@ -213,7 +231,7 @@
 
   <section class="flex column" id="recent_portfolio">
     <div class="portfolio flex column ">
-         <i class="fas fa-info-circle animate__animated animate__fadeInUp"></i>
+         <i class="far fa-save animate__animated animate__fadeInUp"></i>
          <h1 class="animate__animated animate__fadeInUp section_title">Recent Portfolio</h1>
          <div class="line_border"></div>
          <div class="line_border_second "></div>
@@ -249,7 +267,7 @@
 
   <section class="flex column" id="contact_me">
     <div class="contact_structure flex column">
-      <i class="fas fa-info-circle animate__animated animate__fadeInUp"></i>
+      <i class="far fa-paper-plane animate__animated animate__fadeInUp"></i>
       <h1 class="animate__animated animate__fadeInUp section_title">Contact Me</h1>
       <div class="line_border"></div>
       <div class="line_border_second "></div>
@@ -313,6 +331,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
   <script type="text/javascript" src="assets/js/image3d.js"></script>
+  <script type="text/javascript" src="assets/js/hamburger.js"></script>
 
 
 </html>

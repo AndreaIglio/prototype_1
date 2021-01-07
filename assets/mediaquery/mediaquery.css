@@ -1,6 +1,5 @@
 @media all and (max-width:420px) {
 
-   
 
 }
 
@@ -21,14 +20,22 @@
     .experience > div {
         width: 90%;
     }
+    
 
 }
 
 @media all and (min-width: 992px) and (max-width: 1200px) {
 
+    .hamburger_menu {
+        display: none !important;
+    }
 
 }
 
 @media all and (min-width: 1201px) {
+
+    .hamburger_menu {
+        display: none !important;
+    }
 
 }

@@ -164,6 +164,24 @@ header li a {
   padding: 16px;
   text-decoration: none;
 }
+
+.nav-item {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.hamburger_menu {
+  display: none;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  width: 30%;
+  background-color:#1E2326;
+  z-index: 3;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 /* /header */
 
 
@@ -300,6 +318,7 @@ section i {
 
 .about p {
   margin: 40px 0;
+  text-align: justify;
 }
 
 
@@ -352,6 +371,10 @@ align-items: center;
    width: 80%;
    margin: 40px 0px;
    line-height: 2;
+}
+
+.resume i {
+  color :lightgray;
 }
 
 .experience {
@@ -460,6 +483,10 @@ align-items: center;
   margin-top: 40px;
   line-height: 2;
   align-items: center;
+}
+
+.portfolio i {
+  color: lightgray;
 }
 
 .portfolio_categories {
@@ -613,6 +640,10 @@ footer {
   align-items: center;
   position: relative;
   
+}
+
+footer i {
+  color: lightgray;
 }
 
 .nav-footer {

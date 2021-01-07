@@ -148,9 +148,11 @@ var app = new Vue({
 // TODO
 
 // 1- Trigger animations when scroll
+
 // 2- Connect Php file to webhost
+
 // 3- Add popup to view img in full screen when clicked
-// 4- Implement footer with an UP bottom to go automatically on top of the page
+
 // 5- Insert the right informations
-// 6- Change the icons for the different sections
+
 // 7- Navbar mobile to work
