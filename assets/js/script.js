@@ -154,5 +154,3 @@ var app = new Vue({
 // 3- Add popup to view img in full screen when clicked
 
 // 5- Insert the right informations
-
-// 7- Navbar mobile to work

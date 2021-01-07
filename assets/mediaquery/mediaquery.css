@@ -9,8 +9,16 @@
         width: 90%;
     }
  .location {
-     padding-left: 50%;
-   
+     padding-left: 5%;
+    margin-top: 30px;
+ }
+ .work_exp {
+    margin-top: 30px;
+
+ }
+ .skills {
+     margin-top: 30px;
+
  }
 
 }

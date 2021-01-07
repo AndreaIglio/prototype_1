@@ -106,6 +106,7 @@ h6:hover,
   background-position: 0 100%;
 }
 
+
 /* /utility */
 
 
@@ -568,7 +569,7 @@ align-items: center;
 /* /portfolio */
 
 
-/* contact form */
+/* contact me */
 
 
 #contact_me {
@@ -588,8 +589,9 @@ align-items: center;
 }
 .contact {
   width: 100%;
-  margin: 40px 0px;
+  margin: 20px 0px;
   flex-wrap: wrap;
+
   
 }
 
@@ -624,7 +626,8 @@ input,textarea {
   color: white;
 }
 
-/* /contact form */
+
+/* /contact me */
 
 
 
