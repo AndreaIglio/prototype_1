@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 * {
@@ -62,6 +63,7 @@ ul > li {
 .animate__zoomIn {
   --animate-duration: 0.6s;
 }
+
 .nav-link,
 h2,
 h3,
@@ -89,9 +91,12 @@ h5 {
 
 }
 
+h1 {
+  cursor:default;
+}
+
 h5:hover {
 background-color: #1CB698;
-
 
 }
 
@@ -147,6 +152,8 @@ background-color: #1CB698;
 
 .navbar h5{
   margin: 0;
+  background-color: #1E2326;
+  cursor: default;
 }
 
 header ul {
@@ -534,7 +541,7 @@ align-items: center;
 
 
 .projects > img {
-  width: 70%;
+  width: 80%;
   border-radius: 10px;
   
 }
