@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- /css -->
 
-
   <!-- /mediaquery -->
   <link rel="stylesheet" href="assets/mediaquery/mediaquery.css">
   <!-- /mediaquery -->
@@ -51,7 +50,7 @@
 
   <!-- /google font -->
 
-  <title>Document</title>
+  <title>Andrea Iglio</title>
 </head>
 
 <body>
@@ -151,13 +150,12 @@
 
       <div class="row flex">
         <div class="col-lg-6 col-sm-12 animate__animated animate__rotateInDownLeft ">
-          <h2>Personal Details</h2>
+          <h2 >Personal Details</h2>
           <div class="row">
             <div class="col-lg-6 col-6 info_details">
               <ul>
                 <li>Birthdate</li>
                 <li>Phone</li>
-                <li>Email</li>
                 <li>Address</li>
 
               </ul>
@@ -166,7 +164,6 @@
               <ul>
                 <li>28-01-1994</li>
                 <li>+39 3406793418</li>
-                <li>andrea.iglio@gmail.com</li>
                 <li>Italy, Turin, 10141</li>
 
               </ul>
@@ -174,7 +171,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-sm-12 animate__animated animate__rotateInDownRight skills">
-          <h2>Skills</h2>
+          <h2 >Skills</h2>
           <div class="row flex my_interests">
              <div class="col-lg-3 col-md-3 col-sm-3 col-3 flex" v-bind:class="card_interests"
                v-for="(image, index) in skills" :key="index">
@@ -237,20 +234,17 @@
          <div class="line_border_second "></div>
 
       <div class="flex portfolio_categories">
-        <div class="flex categories">
-           <h5 v-for="(item, index) in portfolio_categories" :key="index" @click='selectPortfolio(index)'
-             >
-             {{portfolio_categories[index].name}}
-           </h5>
-        </div>
-       
-      
-      <div class="flex portfolio_project">
+        
+           <div class="categories flex" v-for="(item, index) in portfolio_categories"
+             :key="index" >
+             <h5 @click='selectPortfolio(index)'>{{portfolio_categories[index].name}}</h5>
+            </div>
+            
+            <div class="flex portfolio_project">
       <div v-for="(item, index) in portfolio" :key="index"
         class="flex projects animate__animated animate__zoomIn col-lg-4 col-md-6 col-sm-6 col-12 "
         v-if="item.visible == true">
         <div class="overlay flex column" @click=''>
-          <!-- <i class="fas fa-search"></i> -->
           <span class="animate__animated animate__backInUp">{{item.description}}</span>
         </div>
         <img class="" :src= "item.src" alt="" @mouseover="" @mouseleave= "">
@@ -258,9 +252,9 @@
 
         
       </div>
-      </div>
+            </div>
       
-</div>
+      </div>
     </div>
   </section>
 
@@ -274,15 +268,16 @@
 
       <div class="flex contact">
         <div class="flex contact_form col-lg-6 col-md-6 col-sm-12 col-12">
-          <form class="flex column" action="contact-form.php" id="contact_form" method="post">
+          <form class="flex column" action="/contactform.php" id="contact_form" method="post">
             
-            <input type="text" id="fname" name="firstname" placeholder="Your name" required>
-            <input type="text" id="lname" name="lastname" placeholder="Your lastname" required>
-            <input type="email" name="message" placeholder="Your email" required>
-            <textarea id="subject" name="subject" placeholder="Message" style="height:200px" required>
+            <input type="text" id="fname" name="name" placeholder=" Your name" required>
+            <input type="text" id="lname" name="lastname" placeholder=" Your lastname" required>
+            <input type="email" name="email" placeholder=" Your email" required>
+            <input type="text" name="subject" placeholder=" Subject">
+            <textarea type='text' id="message" name="message" placeholder=" Message" style="height:160px" required>
             </textarea>
 
-            <input type="submit" value="Send Message">
+            <button class="btn btn-dark" type="submit" name="submit">Send Message</button>
           </form>
          
         </div>
@@ -335,3 +330,12 @@
 
 
 </html>
+
+
+<!-- todo -->
+<!-- 
+1) il puntatore sui titoli delle sezioni (e sul tuo nome nella navbar) è una linea per scrivere
+2) jquery e le varie skills si vedono poco con quei colori, se riesci a mettergli un contorno o fare in altro modo
+aumenta molto la leggibilità
+3) prova a zoommare sulle immagini all'hover -->
+<!-- todo -->

@@ -5,7 +5,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-size: 20px;
   overflow-x: hidden;
+  width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6,a {
@@ -27,14 +28,10 @@ ul > li {
   display: block;
 }
 
-.p_20 {
-  padding: 20px;
-}
-
 /* utility */
 
 .wrapper {
- width: 100vw;
+ width: 100%;
  align-items: center;
 }
 
@@ -85,9 +82,8 @@ h6,
 }
 
 h5 {
-  color: #fff;
+
   border: none;
-  padding: 10px 20px;
   -webkit-transition: background 1s;
   transition: background 0.7s;
 
@@ -95,6 +91,7 @@ h5 {
 
 h5:hover {
 background-color: #1CB698;
+
 
 }
 
@@ -105,7 +102,6 @@ h6:hover,
 .social a:hover {
   background-position: 0 100%;
 }
-
 
 /* /utility */
 
@@ -146,9 +142,10 @@ background-color: #1CB698;
 .navbar .navbar-brand {
   color: #1CB698;
   font-size: 28px;
+  padding: 0;
 }
 
-header h5{
+.navbar h5{
   margin: 0;
 }
 
@@ -315,6 +312,7 @@ section i {
 
 .about h2 {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .about p {
@@ -327,6 +325,8 @@ section i {
   color: #1CB698;
   font-family: 'Righteous';
 }
+
+
 
 .my_interests {
   justify-content: center;
@@ -346,6 +346,7 @@ section i {
 .card_interests:hover {
   background-color: #1CB698;
   transition: 1s;
+
 }
 
 
@@ -354,6 +355,7 @@ section i {
 .skills img {
   width: 50px;
 }
+
 
 /* /skills */
 
@@ -483,7 +485,6 @@ align-items: center;
   width: 80%;
   margin-top: 40px;
   line-height: 2;
-  align-items: center;
 }
 
 .portfolio i {
@@ -499,15 +500,21 @@ align-items: center;
   
 }
 
-.categories > h5 {
-  cursor: pointer; 
-  margin: 0;
-}
-
 .categories {
   width: 100%;
   justify-content: center;
+  
 }
+
+.categories h5 {
+  cursor: pointer; 
+  margin: 5px 0px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+
 
 .portfolio_project {
   width: 70%;
@@ -534,10 +541,11 @@ align-items: center;
 }
 
 .projects > img:hover {
-  opacity: 0.4;
   transition: 0.6s;
   cursor: pointer;
+  width: 110%;
 }
+
 
 
 .overlay {
@@ -626,7 +634,12 @@ input,textarea {
   color: white;
 }
 
-
+.contact button {
+  margin: 10px 10px;
+  color:white;
+  background-color: #252A2E;
+  border: 1px solid #1E2326;
+}
 /* /contact me */
 
 
