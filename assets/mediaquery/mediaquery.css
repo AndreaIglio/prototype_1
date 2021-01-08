@@ -1,9 +1,5 @@
 @media all and (max-width:420px) {
 
-
-
-.details_email {}
-
 .info_details {
     padding: 0;
 }
@@ -12,6 +8,15 @@
     padding: 10px;
 }
 
+.projects {
+    width: calc(100%) !important;
+}
+
+.projects>img {
+    width: 80%;
+    border-radius: 10px;
+
+}
 
 }
 
