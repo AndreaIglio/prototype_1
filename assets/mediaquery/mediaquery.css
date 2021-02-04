@@ -100,7 +100,7 @@
     .projects>img:hover {
         transition: 1s;
         cursor: pointer;
-        width: 100%;
+        width: 110%;
     }
 
 }

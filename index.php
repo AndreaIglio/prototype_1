@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <!-- favicon -->
+  <link rel="icon" href="favicon_myfavicon.ico">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -244,10 +245,8 @@
                 <div v-for="(item, index) in portfolio" :key="index"
                 class="flex projects animate__animated animate__zoomIn"
                 v-if="item.visible == true">
-                <!-- <div class="overlay flex column" @click=''>
-                <span class="animate__animated animate__backInUp">{{item.description}}</span>
-                </div> -->
-                  <img class="" :src= "item.src" alt="" @mouseover="" @mouseleave= "">
+
+                <img class="" :src= "item.src" alt="" @mouseover="" @mouseleave= "">
                
               </div>
           </div>
@@ -266,7 +265,7 @@
 
       <div class="flex contact">
         <div class="flex contact_form col-lg-6 col-md-6 col-sm-12 col-12">
-          <form class="flex column" action="/contactform.php" id="contact_form" method="post">
+          <form class="flex column" action="./contactform.php" id="contact_form" method="post">
             
             <input type="text" id="fname" name="name" placeholder=" Your name" required>
             <input type="text" id="lname" name="lastname" placeholder=" Your lastname" required>
@@ -328,12 +327,3 @@
 
 
 </html>
-
-
-<!-- todo -->
-<!-- 
-1) il puntatore sui titoli delle sezioni (e sul tuo nome nella navbar) è una linea per scrivere
-2) jquery e le varie skills si vedono poco con quei colori, se riesci a mettergli un contorno o fare in altro modo
-aumenta molto la leggibilità
-3) prova a zoommare sulle immagini all'hover -->
-<!-- todo -->

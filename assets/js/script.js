@@ -11,6 +11,10 @@ var app = new Vue({
       "assets/img/skills/jquery-1.svg",
       "assets/img/skills/vue-9.svg",
       "assets/img/skills/bootstrap-4.svg",
+      "assets/img/skills/php.svg",
+      "assets/img/skills/sass.svg",
+      "assets/img/skills/laravel.svg",
+      "assets/img/skills/mysql.svg",
     ],
     resume_card: "resume_card",
     formation: [
@@ -18,7 +22,7 @@ var app = new Vue({
         subject: "Web Developer Bootcamp",
         year: "2020 - 2021",
         description:
-          "Full Stack Web Developer bootcamp of six months in which i studied different programming languages and frameworks such as the ones i call my skills",
+          "Full Stack Web Developer bootcamp of six months ( 700+ hours ) in which i studied different programming languages, libraries and frameworks such as the ones i call my skills",
       },
       {
         subject: "High School Degree in Turin, Italy",
@@ -139,18 +143,5 @@ var app = new Vue({
         });
       }
     },
-
   },
 });
-
-
-
-// TODO
-
-// 1- Trigger animations when scroll
-
-// 2- Connect Php file to webhost
-
-// 3- Add popup to view img in full screen when clicked
-
-// 5- Insert the right informations
